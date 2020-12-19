@@ -1,2 +1,3 @@
 # first-repo
-Testing pushing
+Repo detailing ELKstack project
+New line to test push
