@@ -1,3 +1,4 @@
+---
 - name: install elk
   hosts: elk
   become: true
