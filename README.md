@@ -90,10 +90,8 @@ SSH into the control node and follow the steps below:
 - Copy the `install-elk.yml` file to `/etc/ansible`.
   - `curl https://raw.githubusercontent.com/MeldrickRubang/first-repo/main/Ansible/install-elk.yml > /etc/ansible/install-elk.yml`
 - Update the `/etc/ansible/hosts` file to include the IP address of the machine you wish to have elk installed on.
-  - `nano /etc/ansible/hosts`
-  - ```
-  [elk]
-  10.1.0.4 ansible_python_interpreter=/usr/bin/python3
-  ```
+  - Edit the hosts file with: `nano /etc/ansible/hosts`
+  - ```[elk]
+  - 10.1.0.4 ansible_python_interpreter=/usr/bin/python3 ```
 - Run the playbook, and navigate to `[ELK machine public IP address]:5601/app/kibana` to check that the installation worked as expected.
   - `ansible-playbook install-elk.yml`
